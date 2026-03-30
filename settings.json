@@ -1,0 +1,24 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"/Users/weiyan/.claude/hooks/gsd-check-update.js\""
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "node \"/Users/weiyan/.claude/hooks/gsd-statusline.js\""
+  },
+  "enabledPlugins": {
+    "figma@claude-plugins-official": true
+  },
+  "permissions": {
+    "allow": []
+  }
+}

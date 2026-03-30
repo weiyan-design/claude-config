@@ -1,0 +1,1 @@
+/Users/weiyan/Documents/claude-code-commands/commands/write-like-wei.md
