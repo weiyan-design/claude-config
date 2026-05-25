@@ -147,9 +147,30 @@ Drop the file in the pattern folder. The README auto-references
 
 You cannot record this yourself — it requires Wei's screen.
 
+## Step 9 — Commit, push, and confirm the live URL works
+
+Every pattern MUST have a publicly shareable link. The repo
+`weiyan-design/design-patterns` is public and has GitHub Pages enabled, so
+the live URL is automatic the moment you push:
+
+```bash
+cd "/Users/weiyan/Documents/Vibe Code/_design-library"
+git add .
+git commit -m "Add <pattern-name> pattern"
+git push
+```
+
+Then confirm with Wei that the live URL works (give Pages 60–90s to build
+on first deploy after a long quiet period):
+`https://weiyan-design.github.io/design-patterns/<pattern-name>/example.html`
+
+If the URL 404s, troubleshoot before declaring the pattern added. Common
+causes: typo in folder name, missing example.html, Pages still building.
+
 ## Final confirmation
 
-List all the files created and confirm the pattern is in the library:
+List all the files created and confirm the pattern is in the library AND
+shareable:
 
 ```
 Created:
@@ -157,7 +178,11 @@ Created:
     ├── README.md
     └── example.html
 Updated:
-  ~/Documents/Vibe Code/_design-library/README.md  (added row)
+  ~/Documents/Vibe Code/_design-library/README.md  (added row with live URL)
+Pushed:
+  github.com/weiyan-design/design-patterns
+Live at:
+  https://weiyan-design.github.io/design-patterns/<pattern-name>/example.html
 
 To complete: record preview.mp4 and drop in the pattern folder.
 ```
@@ -166,10 +191,14 @@ To complete: record preview.mp4 and drop in the pattern folder.
 
 1. **The bouncer rule.** No pattern enters without 2+ real or planned uses.
 2. **No skipping sections.** If Wei can't fill a section, the pattern isn't ready.
-3. **Status starts as `experiment`.** Only promote to `production` after a 2nd successful reuse — not at creation time.
-4. **Names describe WHAT, not how it looks.** Push back on vague or cute names.
-5. **Don't preemptively extract.** If Wei brings up a pattern that's only been used once, suggest waiting.
-6. **No drive-by adds.** Adding is a deliberate ritual; friction here filters junk.
+3. **Every pattern MUST have a shareable live URL.** No exceptions — the
+   value of the library compounds only when patterns can be shared with
+   collaborators in one click. Push to the public repo and confirm the
+   GitHub Pages URL works before declaring the add complete.
+4. **Status starts as `experiment`.** Only promote to `production` after a 2nd successful reuse — not at creation time.
+5. **Names describe WHAT, not how it looks.** Push back on vague or cute names.
+6. **Don't preemptively extract.** If Wei brings up a pattern that's only been used once, suggest waiting.
+7. **No drive-by adds.** Adding is a deliberate ritual; friction here filters junk.
 
 If Wei wants to bypass any of these for a specific add, ask why, and update
 the library README rules if the answer suggests a real change in policy.
