@@ -118,11 +118,21 @@ Edit `~/Documents/Vibe Code/_design-library/README.md`. In the Patterns
 table, add a new row in alphabetical order by name:
 
 ```
-| [pattern-name](pattern-name/) | experiment | One-line summary | tag1, tag2, tag3 |
+| [pattern-name](pattern-name/) | experiment | [▶ live](https://weiyan-design.github.io/design-patterns/pattern-name/example.html) | One-line summary | tag1, tag2, tag3 |
 ```
 
 The one-line summary should be ~10 words and answer "what does this give me
 if I drop it in." Same words as the README's "What it does" sentence.
+
+Also add a "Live demo" line near the top of the pattern's own README, right
+after the frontmatter:
+
+```
+**▶ Live demo**: https://weiyan-design.github.io/design-patterns/pattern-name/example.html
+```
+
+The URL is automatically valid once the commit is pushed — the repo has
+GitHub Pages enabled from `main` at root.
 
 ## Step 8 — Tell Wei to record preview.mp4
 
